@@ -1,0 +1,17 @@
+
+  <div class="row">
+    {% for b in blog %}
+    <div class="col s12 m6">
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+          <span class="card-title">{{b.title}}</span>
+          <p>{{b.category}}</p>
+        </div>
+        <div class="card-action">
+          <a href="{{ b.get_absolute_url }}">Visit</a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+            
